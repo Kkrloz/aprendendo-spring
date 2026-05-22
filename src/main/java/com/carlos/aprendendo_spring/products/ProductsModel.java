@@ -1,4 +1,4 @@
-package com.carlos.aprendendo_spring.produto;
+package com.carlos.aprendendo_spring.products;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -11,12 +11,12 @@ import lombok.NoArgsConstructor;
 
 // Anotação para indicar que esta classe é uma entidade JPA
 @Entity
-@Table(name = "produto")
+@Table(name = "products")
 // Anotações do Lombok para gerar getters, setters, construtores
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class ProdutoModel {
+public class ProductsModel {
     // Anotação para indicar que este campo é a chave primária
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
